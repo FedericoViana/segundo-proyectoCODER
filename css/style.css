@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url(https://media.istockphoto.com/videos/colored-smoke-on-a-dark-background-blue-and-red-light-with-smoke-video-id1341408852?s=640x640);
+    background: url(https://img.freepik.com/premium-photo/macrame-flowers-wooden-stick-white-background_139345-2215.jpg);
     background-size: cover;
 }
 
@@ -25,6 +25,7 @@ body {
 
 .slide img {
     height: 80vh;
+    size-adjust: inherit;
 }
 
 .footer {
