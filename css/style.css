@@ -11,28 +11,24 @@ body {
 #navbarNav {
     justify-content: end;
 
-
 }
-
-
 
 .bg-body-tertiary {
-    background-color: transparent!important;
+    background-color: transparent !important;
 }
 
-
-
-.slide{
+.slide {
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.slide img{
+.slide img {
     height: 80vh;
 }
+
 .footer {
-    
+
     color: bisque;
     text-decoration: none;
 }
