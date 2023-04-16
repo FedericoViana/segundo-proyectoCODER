@@ -114,6 +114,9 @@ h1 {
     .navbar-brand {
         font-size: 2.5rem;
     }
+    #navbarNav {
+        font-size: 1.5rem;
+}
 }
 
 @media(max-width: 425px) {
@@ -124,6 +127,9 @@ h1 {
     .navbar-brand {
         font-size: 2rem;
     }
+    #navbarNav {
+        font-size: 1.2rem;
+}
 }
 
 @media(max-width: 375px) {
@@ -134,4 +140,7 @@ h1 {
     .navbar-brand {
         font-size: 1.5rem;
     }
+    #navbarNav {
+        font-size: 1rem;
+}
 }
