@@ -11,31 +11,29 @@
 #navbarNav {
     justify-content: end;
     padding: 10px;
-    font-size: 2.5rem;
-    
+    font-size: 2rem;
+
 
 }
-.nav-link{
+
+.nav-link {
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-style: oblique;
     color: #857981 !important;
-    
+
 }
 
-.navbar-brand{
-    font-family:'Trebuchet MS';
+.navbar-brand {
+    font-family: 'Trebuchet MS';
     font-style: oblique;
     font-weight: bold;
     color: rgb(224, 132, 175);
-    font-size: 4rem;
+    font-size: 3rem;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
     color: #d15be4;
-}
-.img {
-    height: 100px;
-    clip-path: circle(50% at 50%);
 }
 
 .bg-body-tertiary {
@@ -43,16 +41,17 @@
 }
 
 /* index*/
-h1{
+h1 {
     padding: 20px;
     display: flex;
     justify-content: center;
-    font-size: 10rem;
+    font-size: 7rem;
     font-family: 'Brush Script MT';
     color: rgb(224, 132, 175);
     text-shadow: 1px 1px 1px #ad2fc0;
-    
+
 }
+
 .slide {
     margin-top: 10px;
     margin-left: 20px;
@@ -60,8 +59,9 @@ h1{
 }
 
 .slide img {
-    height: 80vh;
-   
+    width: 90vh;
+
+
 }
 
 .footer {
@@ -105,4 +105,33 @@ h1{
 
 }
 
-  
+/*Medias Query*/
+@media(max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .navbar-brand {
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 425px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 375px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
