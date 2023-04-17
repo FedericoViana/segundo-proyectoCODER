@@ -47,7 +47,7 @@ body {
 }
 
 /* index*/
-.body {
+body {
     background: url(https://img.freepik.com/premium-photo/macrame-flowers-wooden-stick-white-background_139345-2215.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,15 +69,7 @@ h1 {
     margin: 20px
 }
 
-/*tienda*/
-/*.main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-items: center;
-
-}*/
-
+/*Tienda*/
 .tienda {
     display: grid;
     grid-template-columns: .5fr .5fr .5fr .5fr;
@@ -147,49 +139,32 @@ h1 {
 
 div.card {
     border: 1px;
-    
+
 
 }
 
 div .card-body {
     background-color: rgb(189, 163, 204);
 
-}
-
-button.btn {
-    background-color: #7b1d88f1;
-    border-color: #a345af;
-    color: rgb(207, 101, 221);
-    font-weight: bold;
-}
-
-button.btn:hover {
-    background-color: #ad2fc0;
-    border-color: #cd67dd;
-    color: black;
 
 }
 
-.btn-primary {
-    colo
+.d-grid {
+    justify-content: center;
 }
 
-
-.fondo_tienda {
-    /*background: #BE93C5;
-    /* fallback for old browsers */
-    /*background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to right, #7BC6CC, #BE93C5);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+.btn{
+    background-color: #ad2fc0 !important;
+    border: #ad2fc0;
 }
-
+.d-grid{
+    size: 1rem;
+}
 footer {
     color: bisque;
     text-decoration: none;
-    font-size: 2rem;
-    background-color: black;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -218,44 +193,81 @@ footer {
     #navbarNav {
         font-size: 1.5rem;
     }
-    
-.tienda {
-    display: grid;
-    grid-template-columns: .5fr .5fr .5fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px 10px;
-    grid-template-areas:
-        "card1 card2 card3"
-        "card4 card5 card6"
-        "card7 card8 card9"
-        "card10 card11 card12";
-    margin: 1px;
-}
 
-@media(max-width: 425px) {
-    h1 {
-        font-size: 3rem;
+    .tienda {
+        display: grid;
+        grid-template-columns: .5fr .5fr .5fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card9"
+            "card10 card11 card12";
+        margin: 1px;
     }
-
-    .navbar-brand {
-        font-size: 2rem;
-    }
-
-    #navbarNav {
-        font-size: 1.2rem;
-    }
-}
-
-@media(max-width: 375px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    .navbar-brand {
-        font-size: 1.5rem;
-    }
-
-    #navbarNav {
+    footer {
+        color: bisque;
+        text-decoration: none;
         font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+    
     }
 }
+
+    @media(max-width: 425px) {
+        h1 {
+            font-size: 3rem;
+        }
+
+        .navbar-brand {
+            font-size: 2rem;
+        }
+
+        #navbarNav {
+            font-size: 1.2rem;
+        }
+        footer {
+            color: bisque;
+            text-decoration: none;
+            font-size: 1rem;
+            background-color: rgba(0, 0, 0, 0.5);
+        
+        }
+    }
+
+    @media(max-width: 375px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+
+        #navbarNav {
+            font-size: 1rem;
+        }
+        .tienda {
+            display: grid;
+            grid-template-columns: .5fr .5fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px 10px;
+            grid-template-areas:
+                "card1 card2"
+                "card3 card4"
+                "card5 card6"
+                "card7 card8"
+                "card9 card10"
+                "card11 card12";
+            margin: 1px;
+        }
+        footer {
+            color: bisque;
+            text-decoration: none;
+            font-size: 1rem;
+            background-color: rgba(0, 0, 0, 0.5);
+        
+        }
+
+    }
