@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-.body {
-    background: url(https://img.freepik.com/premium-photo/macrame-flowers-wooden-stick-white-background_139345-2215.jpg);
-    background-size: cover;
-}
 
 #navbarNav {
     justify-content: end;
@@ -40,7 +36,23 @@
     background-color: rgba(0, 0, 0, 0.034) !important;
 }
 
+
+body {
+    min-height: 100vh;
+    display: grid;
+    align-items: end;
+    align-content: space-between;
+
+
+}
+
 /* index*/
+.body {
+    background: url(https://img.freepik.com/premium-photo/macrame-flowers-wooden-stick-white-background_139345-2215.jpg);
+    background-size: cover;
+}
+
+
 h1 {
     padding: 20px;
     display: flex;
@@ -53,47 +65,23 @@ h1 {
 }
 
 .slide {
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px
 }
 
-.slide img {
-    width: 90vh;
-
-
-}
-
-.footer {
-
-    color: bisque;
-    text-decoration: none;
-}
-
-.footer1 {
-    font-family: sans-serif;
-    list-style: none;
-    font-weight: bold;
-
-}
-
-.footer1 a {
-    text-decoration: none;
-}
-
+/*tienda*/
 .main {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
     justify-content: center;
+    justify-items: center;
 
 }
 
-.card {
+/*.card {
     margin-top: 20px;
     margin-left: 20px;
 
-}
+}*/
 
 .fondo_tienda {
     background: #BE93C5;
@@ -105,6 +93,26 @@ h1 {
 
 }
 
+footer {
+    color: bisque;
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: black;
+
+}
+
+.footer1 {
+    font-family: sans-serif;
+    list-style: none;
+    font-weight: bold;
+
+}
+
+.footer1 a {
+    text-decoration: none;
+    color: rgb(36, 126, 126);
+}
+
 /*Medias Query*/
 @media(max-width: 768px) {
     h1 {
@@ -114,9 +122,10 @@ h1 {
     .navbar-brand {
         font-size: 2.5rem;
     }
+
     #navbarNav {
         font-size: 1.5rem;
-}
+    }
 }
 
 @media(max-width: 425px) {
@@ -127,9 +136,10 @@ h1 {
     .navbar-brand {
         font-size: 2rem;
     }
+
     #navbarNav {
         font-size: 1.2rem;
-}
+    }
 }
 
 @media(max-width: 375px) {
@@ -140,7 +150,8 @@ h1 {
     .navbar-brand {
         font-size: 1.5rem;
     }
+
     #navbarNav {
         font-size: 1rem;
-}
+    }
 }
