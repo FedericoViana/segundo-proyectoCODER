@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    height: 100%;
+}
 
 #navbarNav {
     justify-content: end;
@@ -35,18 +37,22 @@
 .bg-body-tertiary {
     background-color: rgba(0, 0, 0, 0.034) !important;
 }
-
-
-body {
-    min-height: 100vh;
-    display: grid;
-    align-items: end;
-    align-content: space-between;
+body{
     background: url(https://img.freepik.com/premium-photo/macrame-flowers-wooden-stick-white-background_139345-2215.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* index*/
+
+.body1 {
+    min-height: 100vh;
+    display: grid;
+    align-items: end;
+    align-content: space-between;
+    min-height: 100vh;  
+   
+}
+
+/*-------Index-------*/
 
 h1 {
     padding: 20px;
@@ -63,11 +69,16 @@ h1 {
     margin: 20px
 }
 
-/*Tienda*/
+/*-------Tienda-------*/
+
 .h2 {
     font-family: 'Trebuchet MS';
     font-weight: bold;
     color: darkorchid;
+}
+
+p {
+    font-size: larger;
 }
 
 .class-tienda p {
@@ -79,7 +90,7 @@ h1 {
     display: grid;
     grid-template-columns: .5fr .5fr .5fr .5fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px 10px;
+    gap: 10px;
     grid-template-areas:
         "card1 card2 card3 card4"
         "card5 card6 card7 card8"
@@ -95,15 +106,18 @@ h1 {
 .card-img-top {
     width: 450px;
     height: 500px;
-    
-
-}
-div .card{
-   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-   transition: all 400ms ease;
 
 
 }
+
+div .card {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    border: 1px;
+
+
+}
+
 div .card:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
@@ -112,7 +126,7 @@ div .card:hover {
 
 .card1 {
     grid-area: card1;
-        
+
 }
 
 .card2 {
@@ -160,16 +174,9 @@ div .card:hover {
 }
 
 
-div.card {
-    border: 1px;
-    
-
-}
-
 div .card-body {
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 5px;
-
+    
 
 }
 
@@ -181,6 +188,42 @@ div .card-body {
     background-color: rgba(0, 0, 0, 0.6) !important;
     border: #423d3d;
 }
+
+
+/*-------Contacto-------*/
+
+.body-contacto{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+}
+.footer-contacto{
+   margin-top: auto;
+}
+
+/*-------Sobre nosotros-------*/
+
+.body-sn{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.footer-sn{
+    margin-top: auto;
+}
+/*-------FAQ-------*/
+
+.body-faq{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.footer-faq{
+    margin-top: auto;
+}
+
+/*-------Footer-------*/
 
 footer {
     color: bisque;
@@ -202,7 +245,8 @@ footer {
     color: rgb(36, 126, 126);
 }
 
-/*Medias Query*/
+/*-------Medias Query-------*/
+
 @media(max-width: 768px) {
     h1 {
         font-size: 4rem;
