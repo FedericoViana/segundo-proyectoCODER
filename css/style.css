@@ -70,6 +70,16 @@ h1 {
 }
 
 /*Tienda*/
+.h2{
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    color: darkorchid;
+}
+.class-tienda p{
+    font-family: 'Trebuchet MS';
+}
+
+
 .tienda {
     display: grid;
     grid-template-columns: .5fr .5fr .5fr .5fr;
@@ -153,13 +163,11 @@ div .card-body {
     justify-content: center;
 }
 
-.btn{
+.btn {
     background-color: #ad2fc0 !important;
     border: #ad2fc0;
 }
-.d-grid{
-    size: 1rem;
-}
+
 footer {
     color: bisque;
     text-decoration: none;
@@ -206,68 +214,84 @@ footer {
             "card10 card11 card12";
         margin: 1px;
     }
+
     footer {
         color: bisque;
         text-decoration: none;
         font-size: 1rem;
         background-color: rgba(0, 0, 0, 0.5);
-    
+
     }
 }
 
-    @media(max-width: 425px) {
-        h1 {
-            font-size: 3rem;
-        }
-
-        .navbar-brand {
-            font-size: 2rem;
-        }
-
-        #navbarNav {
-            font-size: 1.2rem;
-        }
-        footer {
-            color: bisque;
-            text-decoration: none;
-            font-size: 1rem;
-            background-color: rgba(0, 0, 0, 0.5);
-        
-        }
+@media(max-width: 425px) {
+    h1 {
+        font-size: 3rem;
     }
 
-    @media(max-width: 375px) {
-        h1 {
-            font-size: 2rem;
-        }
+    .navbar-brand {
+        font-size: 2rem;
+    }
 
-        .navbar-brand {
-            font-size: 1.5rem;
-        }
+    #navbarNav {
+        font-size: 1.2rem;
+    }
 
-        #navbarNav {
-            font-size: 1rem;
-        }
-        .tienda {
-            display: grid;
-            grid-template-columns: .5fr .5fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 10px 10px;
-            grid-template-areas:
-                "card1 card2"
-                "card3 card4"
-                "card5 card6"
-                "card7 card8"
-                "card9 card10"
-                "card11 card12";
-            margin: 1px;
-        }
-        footer {
-            color: bisque;
-            text-decoration: none;
-            font-size: 1rem;
-            background-color: rgba(0, 0, 0, 0.5);
-        
-        }
+    footer {
+        color: bisque;
+        text-decoration: none;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
 
     }
+
+    .btn {
+        width: 85px;
+        font-size: small;
+    }
+
+
+}
+
+@media(max-width: 375px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    #navbarNav {
+        font-size: 1rem;
+    }
+
+    .tienda {
+        display: grid;
+        grid-template-columns: .5fr .5fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8"
+            "card9 card10"
+            "card11 card12";
+        margin: 1px;
+    }
+
+    footer {
+        color: bisque;
+        text-decoration: none;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .btn {
+        width: 80px;
+        font-size: x-small;
+
+    }
+}
