@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
 }
-html{
-    height: 100%;
+
+html {
+    height: 100vh;
 }
 
 #navbarNav {
@@ -37,19 +38,20 @@ html{
 .bg-body-tertiary {
     background-color: rgba(0, 0, 0, 0.034) !important;
 }
-body{
-    background: url(https://img.freepik.com/premium-photo/macrame-flowers-wooden-stick-white-background_139345-2215.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .body1 {
     min-height: 100vh;
     display: grid;
     align-items: end;
     align-content: space-between;
-    min-height: 100vh;  
-   
+
+
+}
+
+body {
+    background-color: #f3d5f8;
+    background-size: cover;
 }
 
 /*-------Index-------*/
@@ -58,6 +60,7 @@ h1 {
     padding: 20px;
     display: flex;
     justify-content: center;
+    align-items: start;
     font-size: 7rem;
     font-family: 'Brush Script MT';
     color: rgb(224, 132, 175);
@@ -71,18 +74,18 @@ h1 {
 
 /*-------Tienda-------*/
 
-.h2 {
-    font-family: 'Trebuchet MS';
-    font-weight: bold;
-    color: darkorchid;
+.class-tienda h2 {
+    font-family: 'Trebuchet MS' sans-serif;
+    color: rgb(224, 132, 175);
 }
 
 p {
-    font-size: larger;
+    font-size: large;
+
 }
 
 .class-tienda p {
-    font-family: 'Trebuchet MS';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 
@@ -90,7 +93,7 @@ p {
     display: grid;
     grid-template-columns: .5fr .5fr .5fr .5fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 10px 10px;
     grid-template-areas:
         "card1 card2 card3 card4"
         "card5 card6 card7 card8"
@@ -104,8 +107,8 @@ p {
 }
 
 .card-img-top {
-    width: 450px;
-    height: 500px;
+    height: 450px;
+   width: 465px;
 
 
 }
@@ -176,7 +179,7 @@ div .card:hover {
 
 div .card-body {
     background-color: rgba(0, 0, 0, 0.2);
-    
+
 
 }
 
@@ -192,34 +195,54 @@ div .card-body {
 
 /*-------Contacto-------*/
 
-.body-contacto{
+.body-contacto {
     display: flex;
     flex-direction: column;
     min-height: 100%;
 
 }
-.footer-contacto{
-   margin-top: auto;
+
+.mb-3 {
+    width: 500px;
+}
+
+label {
+    font-size: x-large;
+    font-family: 'Trebuchet MS';
+}
+
+.btn-success {
+    color: rgb(196, 105, 31);
+    font-size: larger;
+    background-color: rgb(38, 92, 92) !important;
+
+}
+
+.footer-contacto {
+    margin-top: auto;
 }
 
 /*-------Sobre nosotros-------*/
 
-.body-sn{
+.body-sn {
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
-.footer-sn{
+
+.footer-sn {
     margin-top: auto;
 }
+
 /*-------FAQ-------*/
 
-.body-faq{
+.body-faq {
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
-.footer-faq{
+
+.footer-faq {
     margin-top: auto;
 }
 
@@ -230,6 +253,10 @@ footer {
     text-decoration: none;
     font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+
+
 
 }
 
@@ -242,12 +269,16 @@ footer {
 
 .footer1 a {
     text-decoration: none;
-    color: rgb(36, 126, 126);
+    color: rgb(18, 63, 63);
+}
+
+footer p {
+    font-size: medium;
+    text-align: center;
 }
 
 /*-------Medias Query-------*/
-
-@media(max-width: 768px) {
+@media(max-width: 1440px) {
     h1 {
         font-size: 4rem;
     }
@@ -258,6 +289,7 @@ footer {
 
     #navbarNav {
         font-size: 1.5rem;
+
     }
 
     .tienda {
@@ -280,6 +312,89 @@ footer {
         background-color: rgba(0, 0, 0, 0.5);
 
     }
+
+    .card-img-top {   
+        height: 450px; 
+        width: 450px;
+        
+    }
+}
+@media(max-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .navbar-brand {
+        font-size: 2.5rem;
+    }
+
+    #navbarNav {
+        font-size: 1.5rem;
+
+    }
+
+    .tienda {
+        display: grid;
+        grid-template-columns: .5fr .5fr .5fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card9"
+            "card10 card11 card12";
+        margin: 1px;
+    }
+
+    footer {
+        color: bisque;
+        text-decoration: none;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .card-img-top {   
+        height: 450px; 
+        width: 334.67px;
+        
+    }
+}
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+    }
+
+    #navbarNav {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        color: bisque;
+        text-decoration: none;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .btn {
+        width: 85px;
+        font-size: small;
+    }
+
+    .card-img-top {
+        height: 450px;
+        width: 250px;
+        
+        
+    }
+
+
 }
 
 @media(max-width: 425px) {
@@ -308,6 +423,11 @@ footer {
         font-size: small;
     }
 
+    .card-img-top {
+        height: 450px;
+        width: 135px;
+    }
+
 
 }
 
@@ -328,14 +448,20 @@ footer {
         display: grid;
         grid-template-columns: .5fr .5fr;
         grid-template-rows: 1fr 1fr;
-        gap: 10px 10px;
+        gap: ;
         grid-template-areas:
             "card1 card2"
+
             "card3 card4"
+
             "card5 card6"
+
             "card7 card8"
+
             "card9 card10"
+
             "card11 card12";
+
         margin: 1px;
     }
 
@@ -350,6 +476,66 @@ footer {
     .btn {
         width: 80px;
         font-size: x-small;
+
+    }
+
+    .card-img-top {
+        height: 450px;
+        width: 182.2px;
+    }
+}
+
+@media(max-width: 320px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    #navbarNav {
+        font-size: 1rem;
+    }
+
+    .tienda {
+        display: grid;
+        grid-template-columns: .5fr .5fr;
+        grid-template-rows: 1fr 1fr;
+        gap: ;
+        grid-template-areas:
+            "card1 card2"
+
+            "card3 card4"
+
+            "card5 card6"
+
+            "card7 card8"
+
+            "card9 card10"
+
+            "card11 card12";
+
+        margin: 1px;
+    }
+
+    footer {
+        color: bisque;
+        text-decoration: none;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .btn {
+        width: 80px;
+        font-size: x-small;
+
+    }
+
+    .card-img-top {
+        height: 450px;
+        width: 155px;
 
     }
 }
