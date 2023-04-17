@@ -256,8 +256,6 @@ footer {
     display: flex;
     justify-content: space-between;
 
-
-
 }
 
 .footer1 {
@@ -448,7 +446,6 @@ footer p {
         display: grid;
         grid-template-columns: .5fr .5fr;
         grid-template-rows: 1fr 1fr;
-        gap: ;
         grid-template-areas:
             "card1 card2"
 
@@ -502,7 +499,6 @@ footer p {
         display: grid;
         grid-template-columns: .5fr .5fr;
         grid-template-rows: 1fr 1fr;
-        gap: ;
         grid-template-areas:
             "card1 card2"
 
