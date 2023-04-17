@@ -42,17 +42,11 @@ body {
     display: grid;
     align-items: end;
     align-content: space-between;
-
-
-}
-
-/* index*/
-body {
     background: url(https://img.freepik.com/premium-photo/macrame-flowers-wooden-stick-white-background_139345-2215.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/* index*/
 
 h1 {
     padding: 20px;
@@ -70,12 +64,13 @@ h1 {
 }
 
 /*Tienda*/
-.h2{
+.h2 {
     font-family: 'Trebuchet MS';
     font-weight: bold;
     color: darkorchid;
 }
-.class-tienda p{
+
+.class-tienda p {
     font-family: 'Trebuchet MS';
 }
 
@@ -97,8 +92,27 @@ h1 {
     height: 100%;
 }
 
+.card-img-top {
+    width: 450px;
+    height: 500px;
+    
+
+}
+div .card{
+   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+   transition: all 400ms ease;
+
+
+}
+div .card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+
+}
+
 .card1 {
     grid-area: card1;
+        
 }
 
 .card2 {
@@ -146,15 +160,15 @@ h1 {
 }
 
 
-
 div.card {
     border: 1px;
-
+    
 
 }
 
 div .card-body {
-    background-color: rgb(189, 163, 204);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
 
 
 }
@@ -164,8 +178,8 @@ div .card-body {
 }
 
 .btn {
-    background-color: #ad2fc0 !important;
-    border: #ad2fc0;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border: #423d3d;
 }
 
 footer {
