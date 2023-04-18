@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 html {
     height: 100vh;
 }
@@ -72,10 +73,12 @@ h1 {
     margin: 20px
 }
 
+
 /*-------Tienda-------*/
 
 .class-tienda h2 {
-    font-family: 'Trebuchet MS' sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
     color: rgb(224, 132, 175);
 }
 
