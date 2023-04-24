@@ -1,42 +1,46 @@
 * {
     margin: 0;
     padding: 0;
+    
+
 }
 
 
 html {
     height: 100vh;
+
 }
 
-#navbarNav {
+.barra {
     justify-content: end;
     padding: 10px;
     font-size: 2rem;
 
 
+
 }
 
-.nav-link {
-    font-family: 'Trebuchet MS', sans-serif;
+.secciones {
+    font-family: 'Abel', sans-serif;
     font-weight: bold;
     font-style: oblique;
     color: #857981 !important;
 
 }
 
-.navbar-brand {
-    font-family: 'Trebuchet MS';
+.marca {
+    font-family: 'Abel', sans-serif;
     font-style: oblique;
     font-weight: bold;
     color: rgb(224, 132, 175);
     font-size: 3rem;
 }
 
-.navbar-brand:hover {
+.marca:hover {
     color: #d15be4;
 }
 
-.bg-body-tertiary {
+.barra1 {
     background-color: rgba(0, 0, 0, 0.034) !important;
 }
 
@@ -63,34 +67,91 @@ h1 {
     justify-content: center;
     align-items: start;
     font-size: 7rem;
-    font-family: 'Brush Script MT';
+    font-family: 'Itim';
     color: rgb(224, 132, 175);
     text-shadow: 1px 1px 1px #ad2fc0;
 
 }
-
-.slide {
+.carousel{
+    margin: 0%;
+}
+.fotos-de-inicio {
     margin: 20px
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 300px 1fr;
+    gap: 7px 7px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "text imagen "
+    ;
+    width: 90%;
+    height: 90%;
+    padding-bottom: 30px;
+}
+
+.text {
+    grid-area: text;
+}
+
+.text h3 {
+    margin: 15px;
+    text-align: center;
+}
+
+.text h3 p a {
+    font-family: 'Dosis', sans-serif;
+
+}
+
+div .text .boton-index {
+    align-items: center;
+}
+
+.imagen {
+    grid-area: imagen;
+
+}
+
+.img-data {
+    width: 500px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 5);
+    border: 2px;
+
+}
+
+.boton-index {
+    display: flex;
+    justify-content: center;
+    margin: 0px 200px;
+}
+
+div .text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
 
 /*-------Tienda-------*/
 
-.class-tienda h2 {
-    font-family: 'Dancing Script', cursive;
+h2 {
+    font-family: 'Dosis', sans-serif;
     font-weight: 500;
     color: rgb(224, 132, 175);
-}
-
-p {
-    font-size: large;
-
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .class-tienda p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
+    font-family: 'Dosis', sans-serif;
 
+}
 
 .tienda {
     display: grid;
@@ -104,22 +165,26 @@ p {
 
     justify-items: center;
     justify-content: center;
-    margin: 1px;
+    margin: 0px;
     width: 100%;
     height: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .card-img-top {
     height: 450px;
-   width: 465px;
+    width: 450px;
 
 
 }
 
+
 div .card {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     transition: all 400ms ease;
-    border: 1px;
+    border: 0px;
+
 
 
 }
@@ -190,7 +255,7 @@ div .card-body {
     justify-content: center;
 }
 
-.btn {
+.boton {
     background-color: rgba(0, 0, 0, 0.6) !important;
     border: #423d3d;
 }
@@ -205,21 +270,30 @@ div .card-body {
 
 }
 
-.mb-3 {
+.campo {
     width: 500px;
 }
 
 label {
     font-size: x-large;
-    font-family: 'Trebuchet MS';
+    font-family: 'Dosis', sans-serif;
 }
 
-.btn-success {
-    color: rgb(196, 105, 31);
+.boton {
+    color: rgb(102, 30, 236);
     font-size: larger;
-    background-color: rgb(38, 92, 92) !important;
+    background-color: rgb(32, 173, 173) !important;
+    font-family: 'Dosis', sans-serif !important;
 
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
 
 .footer-contacto {
     margin-top: auto;
@@ -233,8 +307,25 @@ label {
     min-height: 100%;
 }
 
+p {
+    font-family: 'Dosis', sans-serif;
+    font-size: x-large;
+    margin: 15px;
+}
+
 .footer-sn {
     margin-top: auto;
+}
+
+div.yt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.ventana {
+    margin: 20px;
 }
 
 /*-------FAQ-------*/
@@ -245,8 +336,13 @@ label {
     min-height: 100%;
 }
 
+
 .footer-faq {
     margin-top: auto;
+}
+
+.consultas {
+    margin: 30px;
 }
 
 /*-------Footer-------*/
@@ -288,9 +384,27 @@ footer p {
         font-size: 2.5rem;
     }
 
-    #navbarNav {
+    .barra {
         font-size: 1.5rem;
 
+    }
+
+    .btn {
+        width: 100px;
+        font-size: large;
+    }
+
+    div p {
+        font-size: 20px;
+
+    }
+
+    p {
+        margin: 15px;
+    }
+
+    p.card-text {
+        width: 250px;
     }
 
     .tienda {
@@ -303,7 +417,7 @@ footer p {
             "card4 card5 card6"
             "card7 card8 card9"
             "card10 card11 card12";
-        margin: 1px;
+        margin: 0px;
     }
 
     footer {
@@ -314,12 +428,14 @@ footer p {
 
     }
 
-    .card-img-top {   
-        height: 450px; 
+    .card-img-top {
+        height: 450px;
         width: 450px;
-        
+
     }
+
 }
+
 @media(max-width: 1024px) {
     h1 {
         font-size: 4rem;
@@ -329,7 +445,7 @@ footer p {
         font-size: 2.5rem;
     }
 
-    #navbarNav {
+    .barra {
         font-size: 1.5rem;
 
     }
@@ -355,10 +471,28 @@ footer p {
 
     }
 
-    .card-img-top {   
-        height: 450px; 
+    .card-img-top {
+        height: 450px;
         width: 334.67px;
-        
+
+    }
+
+    .btn {
+        width: 100px;
+        font-size: large;
+    }
+
+    div p {
+        font-size: 15px;
+
+    }
+
+    p {
+        margin: 10px;
+    }
+
+    p.card-text {
+        width: 180px;
     }
 }
 
@@ -371,7 +505,7 @@ footer p {
         font-size: 2rem;
     }
 
-    #navbarNav {
+    .barra {
         font-size: 1.2rem;
     }
 
@@ -384,17 +518,29 @@ footer p {
     }
 
     .btn {
-        width: 85px;
-        font-size: small;
+        width: 100px;
+        font-size: large;
+    }
+
+    div p {
+        font-size: 15px;
+
+    }
+
+    p {
+        margin: 10px;
+    }
+
+    p.card-text {
+        width: 180px;
     }
 
     .card-img-top {
         height: 450px;
         width: 250px;
-        
-        
-    }
 
+
+    }
 
 }
 
@@ -407,8 +553,28 @@ footer p {
         font-size: 2rem;
     }
 
-    #navbarNav {
+    .barra {
         font-size: 1.2rem;
+    }
+
+    .tienda {
+        display: grid;
+        grid-template-columns: .5fr .5fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+
+            "card3 card4"
+
+            "card5 card6"
+
+            "card7 card8"
+
+            "card9 card10"
+
+            "card11 card12";
+
+        margin: 1px;
     }
 
     footer {
@@ -424,9 +590,37 @@ footer p {
         font-size: small;
     }
 
+    div p {
+        font-size: 15px;
+
+    }
+
+    p {
+        margin: 10px;
+    }
+
+    p.card-text {
+        width: 180px;
+    }
+
+
     .card-img-top {
-        height: 450px;
-        width: 135px;
+        height: 430px;
+        width: 200px;
+
+    }
+
+    div .card-body {
+        width: 200px;
+    }
+
+    iframe {
+        width: 425px;
+    }
+
+    .campo {
+        width: 425px;
+        padding: 5px;
     }
 
 
@@ -441,29 +635,35 @@ footer p {
         font-size: 1.5rem;
     }
 
-    #navbarNav {
+    .barra {
         font-size: 1rem;
     }
 
     .tienda {
         display: grid;
-        grid-template-columns: .5fr .5fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: .5fr;
+        grid-template-rows: 1fr;
         grid-template-areas:
-            "card1 card2"
+            "card1"
+            "card2"
 
-            "card3 card4"
+            "card3 "
+            "card4"
 
-            "card5 card6"
+            "card5"
+            "card6"
 
-            "card7 card8"
+            "card7"
+            "card8"
 
-            "card9 card10"
+            "card9"
+            "card10"
 
-            "card11 card12";
+            "card11"
+            "card12";
 
-        margin: 1px;
     }
+
 
     footer {
         color: bisque;
@@ -474,16 +674,36 @@ footer p {
     }
 
     .btn {
-        width: 80px;
-        font-size: x-small;
+        width: 100px;
+        font-size: 20px;
 
     }
 
     .card-img-top {
-        height: 450px;
-        width: 182.2px;
+        height: 430px;
+        width: 300px;
+
     }
+
+    div .card-body {
+        width: 300px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    iframe {
+        width: 375px;
+    }
+
+    .campo {
+        width: 375px;
+        padding: 15px;
+    }
+    
 }
+
 
 @media(max-width: 320px) {
     h1 {
@@ -494,28 +714,54 @@ footer p {
         font-size: 1.5rem;
     }
 
-    #navbarNav {
+    .barra {
         font-size: 1rem;
     }
 
     .tienda {
         display: grid;
-        grid-template-columns: .5fr .5fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: .5fr;
+        grid-template-rows: 1fr;
         grid-template-areas:
-            "card1 card2"
+            "card1"
+            "card2"
 
-            "card3 card4"
+            "card3 "
+            "card4"
 
-            "card5 card6"
+            "card5"
+            "card6"
 
-            "card7 card8"
+            "card7"
+            "card8"
 
-            "card9 card10"
+            "card9"
+            "card10"
 
-            "card11 card12";
+            "card11"
+            "card12";
 
-        margin: 1px;
+    }
+
+
+    .card-img-top {
+        height: 430px;
+        width: 200px;
+
+    }
+
+    div .card-body {
+        width: 200px;
+    }
+
+    iframe {
+        width: 320px;
+    }
+
+    .campo {
+        width: 320px;
+        padding: 15px;
+
     }
 
     footer {
@@ -527,14 +773,12 @@ footer p {
     }
 
     .btn {
-        width: 80px;
-        font-size: x-small;
+        width: 100px;
+        font-size: 20px;
 
     }
 
-    .card-img-top {
-        height: 450px;
-        width: 155px;
+   
 
-    }
+
 }
